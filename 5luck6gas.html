@@ -1,223 +1,188 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #4689cc; -webkit-text-stroke: #4689cc}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #c27e65; -webkit-text-stroke: #c27e65}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #8cd3fe; -webkit-text-stroke: #8cd3fe}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #71c083; -webkit-text-stroke: #71c083}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #cacaca; -webkit-text-stroke: #cacaca; min-height: 16.0px}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #6d7378; -webkit-text-stroke: #6d7378}
-    span.s1 {font-kerning: none; background-color: #171818}
-    span.s2 {font-kerning: none; color: #8cd3fe; background-color: #171818; -webkit-text-stroke: 0px #8cd3fe}
-    span.s3 {font-kerning: none; color: #6d6d6d; background-color: #171818; -webkit-text-stroke: 0px #6d6d6d}
-    span.s4 {font-kerning: none; color: #4689cc; background-color: #171818; -webkit-text-stroke: 0px #4689cc}
-    span.s5 {font-kerning: none; color: #cacaca; background-color: #171818; -webkit-text-stroke: 0px #cacaca}
-    span.s6 {font-kerning: none; color: #c27e65; background-color: #171818; -webkit-text-stroke: 0px #c27e65}
-    span.s7 {font-kerning: none; color: #b76ff7; background-color: #171818; -webkit-text-stroke: 0px #b76ff7}
-    span.s8 {font-kerning: none; color: #d4d4d4; background-color: #171818; -webkit-text-stroke: 0px #d4d4d4}
-    span.s9 {font-kerning: none}
-    span.s10 {font-kerning: none; color: #a7c598; background-color: #171818; -webkit-text-stroke: 0px #a7c598}
-    span.s11 {font-kerning: none; color: #f67c30; background-color: #171818; -webkit-text-stroke: 0px #f67c30}
-    span.s12 {font-kerning: none; color: #6d7378; background-color: #171818; -webkit-text-stroke: 0px #6d7378}
-    span.s13 {font-kerning: none; color: #71c083; background-color: #171818; -webkit-text-stroke: 0px #71c083}
-    span.s14 {font-kerning: none; color: #36c0a0; background-color: #171818; -webkit-text-stroke: 0px #36c0a0}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五運六氣查詢系統 (1927-2026)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Noto Serif TC', serif;
+            background-color: #f4f1ea;
+            color: #333;
+        }
+
+        .content-box {
+            min-height: 100px;
+            transition: all 0.3s ease;
+        }
+
+        .label-tag {
+            background-color: #8b7355;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            margin-bottom: 8px;
+            display: inline-block;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #8b7355;
+            box-shadow: 0 0 0 2px rgba(139, 115, 85, 0.2);
+        }
+    </style>
 </head>
-<body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
-<p class="p2"><span class="s3">&lt;</span><span class="s4">html</span><span class="s5"> </span><span class="s2">lang</span><span class="s3">=</span><span class="s1">"zh-TW"</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s6">"UTF-8"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s5"> </span><span class="s2">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s5"> </span><span class="s2">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">title</span><span class="s3">&gt;</span><span class="s1">五運六氣查詢系統 (1927-2026)</span><span class="s3">&lt;/</span><span class="s4">title</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s5"> </span><span class="s2">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s7">@import</span><span class="s5"> </span><span class="s6">url</span><span class="s8">(</span><span class="s1">'https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&amp;display=swap'</span><span class="s8">);</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">body</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s2">font-family:</span><span class="s5"> </span><span class="s1">'Noto Serif TC'</span><span class="s8">,</span><span class="s5"> </span><span class="s6">serif</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background-color:</span><span class="s1"> #f4f1ea</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> #333</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.content-box</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">min-height:</span><span class="s1"> </span><span class="s10">100px</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">transition:</span><span class="s1"> </span><span class="s6">all</span><span class="s1"> </span><span class="s10">0.3s</span><span class="s1"> </span><span class="s6">ease</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">.label-tag</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">background-color:</span><span class="s1"> #8b7355</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">color:</span><span class="s1"> </span><span class="s6">white</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">padding:</span><span class="s1"> </span><span class="s10">2px</span><span class="s1"> </span><span class="s10">10px</span><span class="s8">;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">border-radius:</span><span class="s5"> </span><span class="s10">4px</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">font-size:</span><span class="s1"> </span><span class="s10">0.875rem</span><span class="s8">;</span></p>
-<p class="p3"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">margin-bottom:</span><span class="s5"> </span><span class="s10">8px</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">display:</span><span class="s1"> </span><span class="s6">inline-block</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">input:focus</span><span class="s5"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">outline:</span><span class="s1"> </span><span class="s6">none</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">border-color:</span><span class="s1"> #8b7355</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s2">box-shadow:</span><span class="s1"> </span><span class="s10">0</span><span class="s1"> </span><span class="s10">0</span><span class="s1"> </span><span class="s10">0</span><span class="s1"> </span><span class="s10">2px</span><span class="s1"> </span><span class="s6">rgba(</span><span class="s10">139</span><span class="s8">,</span><span class="s1"> </span><span class="s10">115</span><span class="s8">,</span><span class="s1"> </span><span class="s10">85</span><span class="s8">,</span><span class="s1"> </span><span class="s10">0.2</span><span class="s6">)</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s3">&lt;</span><span class="s4">body</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex items-center justify-center min-h-screen p-4"</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"max-w-4xl w-full bg-white p-8 rounded-xl shadow-lg border border-stone-200"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">h1</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-3xl font-bold text-center mb-8 text-stone-800"</span><span class="s3">&gt;</span><span class="s5">五運六氣查詢系統</span><span class="s3">&lt;/</span><span class="s4">h1</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"grid grid-cols-1 md:grid-cols-12 gap-6"</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- 年份格 (輸入) --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"md:col-span-3 flex flex-col"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"label-tag"</span><span class="s3">&gt;</span><span class="s1">查詢年份</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"flex-grow flex items-center justify-center bg-stone-50 border-2 border-stone-200 rounded-lg p-4"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">input</span><span class="s1"> </span><span class="s2">type</span><span class="s3">=</span><span class="s6">"number"</span><span class="s1"> </span><span class="s2">id</span><span class="s3">=</span><span class="s6">"yearInput"</span><span class="s1"><span class="Apple-converted-space"> </span></span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                           </span></span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-4xl font-bold text-center bg-transparent w-full text-stone-700"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                           </span></span><span class="s2">min</span><span class="s3">=</span><span class="s6">"1927"</span><span class="s1"> </span><span class="s2">max</span><span class="s3">=</span><span class="s6">"2026"</span><span class="s1"> </span><span class="s2">value</span><span class="s3">=</span><span class="s6">"2026"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xs text-center mt-2 text-stone-500"</span><span class="s3">&gt;</span><span class="s5">請輸入 1927 - 2026</span><span class="s3">&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- 五運六氣格 (顯示) --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"md:col-span-4 flex flex-col"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"label-tag"</span><span class="s3">&gt;</span><span class="s1">五運六氣</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"wuYunBox"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-box flex-grow bg-stone-50 border-2 border-stone-200 rounded-lg p-6 flex items-center justify-center text-center"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">p</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-xl font-bold leading-relaxed text-stone-700"</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"wuYunResult"</span><span class="s3">&gt;&lt;/</span><span class="s4">p</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">&lt;!-- 運氣特點格 (顯示) --&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"md:col-span-5 flex flex-col"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">span</span><span class="s1"> </span><span class="s2">class</span><span class="s3">=</span><span class="s6">"label-tag"</span><span class="s3">&gt;</span><span class="s1">運氣特點</span><span class="s3">&lt;/</span><span class="s4">span</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"featureBox"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"content-box flex-grow bg-stone-50 border-2 border-stone-200 rounded-lg p-6 overflow-y-auto"</span><span class="s3">&gt;</span></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">                    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">id</span><span class="s3">=</span><span class="s1">"featureResult"</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"text-stone-600 leading-relaxed space-y-2"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p2"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s5"> </span><span class="s2">class</span><span class="s3">=</span><span class="s1">"mt-8 text-center text-stone-400 text-sm italic"</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>資料來源：1927-2026 五運六氣完整詳細總結表</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 定義 60 年循環的基礎數據 (根據天干地支規律推算)</span></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 1924 為 甲子 (0)</span></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 1927 為 丁卯 (3)</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s5"> stems </span><span class="s8">=</span><span class="s5"> </span><span class="s8">[</span><span class="s1">"甲"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"乙"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"丙"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"丁"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"戊"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"己"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"庚"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"辛"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"壬"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"癸"</span><span class="s8">];</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s5"> branches </span><span class="s8">=</span><span class="s5"> </span><span class="s8">[</span><span class="s1">"子"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"丑"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"寅"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"卯"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"辰"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"巳"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"午"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"未"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"申"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"酉"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"戌"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"亥"</span><span class="s8">];</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 司天對應表 (地支)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s1"> siTianMap </span><span class="s8">=</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"子"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"少陰君火"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"午"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"少陰君火"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"丑"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"太陰濕土"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"未"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"太陰濕土"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"寅"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"少陽相火"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"申"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"少陽相火"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"卯"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"陽明燥金"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"酉"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"陽明燥金"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"辰"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"太陽寒水"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"戌"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"太陽寒水"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"巳"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"厥陰風木"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"亥"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"厥陰風木"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">};</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 在泉對應表 (地支)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s1"> zaiQuanMap </span><span class="s8">=</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"子"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"陽明燥金"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"午"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"陽明燥金"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"丑"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"太陽寒水"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"未"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"太陽寒水"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"寅"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"厥陰風木"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"申"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"厥陰風木"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"卯"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"少陰君火"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"酉"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"少陰君火"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"辰"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"太陰濕土"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"戌"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"太陰濕土"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"巳"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"少陽相火"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"亥"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"少陽相火"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">};</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">        </span></span><span class="s1">// 大運對應表 (天干)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s1"> daYunMap </span><span class="s8">=</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"甲"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"土運太過"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"己"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"土運不及"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"乙"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"金運不及"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"庚"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"金運太過"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"丙"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"水運太過"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"辛"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"水運不及"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"丁"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"木運不及"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"壬"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"木運太過"</span><span class="s8">,</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">"戊"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"火運太過"</span><span class="s8">,</span><span class="s5"> </span><span class="s1">"癸"</span><span class="s8">:</span><span class="s5"> </span><span class="s1">"火運不及"</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">};</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">function</span><span class="s1"> getFortuneData</span><span class="s8">(</span><span class="s1">year</span><span class="s8">)</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> baseYear </span><span class="s8">=</span><span class="s1"> </span><span class="s11">1924</span><span class="s8">;</span><span class="s1"> </span><span class="s12">// 甲子</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> offset </span><span class="s8">=</span><span class="s1"> </span><span class="s8">(</span><span class="s1">year </span><span class="s8">-</span><span class="s1"> baseYear</span><span class="s8">)</span><span class="s1"> </span><span class="s8">%</span><span class="s1"> </span><span class="s11">60</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> stemIdx </span><span class="s8">=</span><span class="s1"> </span><span class="s8">(</span><span class="s1">year </span><span class="s8">-</span><span class="s1"> </span><span class="s11">4</span><span class="s8">)</span><span class="s1"> </span><span class="s8">%</span><span class="s1"> </span><span class="s11">10</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> branchIdx </span><span class="s8">=</span><span class="s1"> </span><span class="s8">(</span><span class="s1">year </span><span class="s8">-</span><span class="s1"> </span><span class="s11">4</span><span class="s8">)</span><span class="s1"> </span><span class="s8">%</span><span class="s1"> </span><span class="s11">12</span><span class="s8">;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> stem </span><span class="s8">=</span><span class="s1"> stems</span><span class="s8">[</span><span class="s1">stemIdx</span><span class="s8">];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> branch </span><span class="s8">=</span><span class="s1"> branches</span><span class="s8">[</span><span class="s1">branchIdx</span><span class="s8">];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> stemBranch </span><span class="s8">=</span><span class="s1"> stem </span><span class="s8">+</span><span class="s1"> branch</span><span class="s8">;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> siTian </span><span class="s8">=</span><span class="s1"> siTianMap</span><span class="s8">[</span><span class="s1">branch</span><span class="s8">];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> zaiQuan </span><span class="s8">=</span><span class="s1"> zaiQuanMap</span><span class="s8">[</span><span class="s1">branch</span><span class="s8">];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> daYun </span><span class="s8">=</span><span class="s1"> daYunMap</span><span class="s8">[</span><span class="s1">stem</span><span class="s8">];</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s12">// 構建五運六氣描述</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> wuYun </span><span class="s8">=</span><span class="s1"> </span><span class="s13">`</span><span class="s8">${</span><span class="s1">stemBranch</span><span class="s8">}</span><span class="s13">年&lt;br&gt;</span><span class="s8">${</span><span class="s1">stem</span><span class="s8">}</span><span class="s13">為</span><span class="s8">${</span><span class="s1">daYun</span><span class="s8">.</span><span class="s1">slice</span><span class="s8">(</span><span class="s11">0</span><span class="s8">,</span><span class="s11">2</span><span class="s8">)}</span><span class="s13">（</span><span class="s8">${</span><span class="s1">daYun</span><span class="s8">}</span><span class="s13">）；&lt;br&gt;</span><span class="s8">${</span><span class="s1">siTian</span><span class="s8">}</span><span class="s13">司天；&lt;br&gt;</span><span class="s8">${</span><span class="s1">zaiQuan</span><span class="s8">}</span><span class="s13">在泉`</span><span class="s8">;</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">// 構建詳細特點 (模擬 V4 生成的邏輯)</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">let</span><span class="s1"> features </span><span class="s8">=</span><span class="s1"> </span><span class="s8">[];</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>features</span><span class="s8">.</span><span class="s1">push</span><span class="s8">(</span><span class="s13">`○ 該年為「</span><span class="s8">${</span><span class="s1">siTian</span><span class="s8">}</span><span class="s13">」司天，上半年氣候以</span><span class="s8">${</span><span class="s1">siTian</span><span class="s8">.</span><span class="s1">slice</span><span class="s8">(</span><span class="s11">2</span><span class="s8">)}</span><span class="s13">主事，氣候偏</span><span class="s8">${</span><span class="s1">siTian</span><span class="s8">.</span><span class="s1">slice</span><span class="s8">(</span><span class="s11">2</span><span class="s8">,</span><span class="s11">3</span><span class="s8">)</span><span class="s1"> </span><span class="s8">===</span><span class="s1"> </span><span class="s13">'寒'</span><span class="s1"> </span><span class="s8">?</span><span class="s1"> </span><span class="s13">'冷'</span><span class="s1"> </span><span class="s8">:</span><span class="s1"> siTian</span><span class="s8">.</span><span class="s1">slice</span><span class="s8">(</span><span class="s11">2</span><span class="s8">,</span><span class="s11">3</span><span class="s8">)</span><span class="s1"> </span><span class="s8">===</span><span class="s1"> </span><span class="s13">'燥'</span><span class="s1"> </span><span class="s8">?</span><span class="s1"> </span><span class="s13">'乾'</span><span class="s1"> </span><span class="s8">:</span><span class="s1"> </span><span class="s13">'熱'</span><span class="s8">}</span><span class="s13">。`</span><span class="s8">);</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">daYun</span><span class="s8">.</span><span class="s1">includes</span><span class="s8">(</span><span class="s13">"太過"</span><span class="s8">))</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>features</span><span class="s8">[</span><span class="s11">0</span><span class="s8">]</span><span class="s1"> </span><span class="s8">+=</span><span class="s1"> </span><span class="s13">` 受「</span><span class="s8">${</span><span class="s1">daYun</span><span class="s8">.</span><span class="s1">slice</span><span class="s8">(</span><span class="s11">0</span><span class="s8">,</span><span class="s11">2</span><span class="s8">)}</span><span class="s13">」之影響，氣候變化較為劇烈。`</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">}</span><span class="s1"> </span><span class="s7">else</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>features</span><span class="s8">[</span><span class="s11">0</span><span class="s8">]</span><span class="s1"> </span><span class="s8">+=</span><span class="s1"> </span><span class="s13">` 由於「</span><span class="s8">${</span><span class="s1">daYun</span><span class="s8">.</span><span class="s1">slice</span><span class="s8">(</span><span class="s11">0</span><span class="s8">,</span><span class="s11">2</span><span class="s8">)}</span><span class="s13">」不足，易受司天之氣克制。`</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>features</span><span class="s8">.</span><span class="s1">push</span><span class="s8">(</span><span class="s13">`○ 下半年由「</span><span class="s8">${</span><span class="s1">zaiQuan</span><span class="s8">}</span><span class="s13">」在泉主導，</span><span class="s8">${</span><span class="s1">zaiQuan</span><span class="s8">.</span><span class="s1">slice</span><span class="s8">(</span><span class="s11">2</span><span class="s8">)}</span><span class="s13">之氣流行。`</span><span class="s8">);</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">let</span><span class="s1"> summary </span><span class="s8">=</span><span class="s1"> </span><span class="s13">""</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">daYun</span><span class="s8">.</span><span class="s1">includes</span><span class="s8">(</span><span class="s13">"水"</span><span class="s8">))</span><span class="s1"> summary </span><span class="s8">=</span><span class="s1"> </span><span class="s13">"全年水氣偏盛，寒氣較重，需注意冷熱交替。"</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">else</span><span class="s1"> </span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">daYun</span><span class="s8">.</span><span class="s1">includes</span><span class="s8">(</span><span class="s13">"火"</span><span class="s8">))</span><span class="s1"> summary </span><span class="s8">=</span><span class="s1"> </span><span class="s13">"全年火氣偏旺，炎熱明顯，燥氣可能隨之。"</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">else</span><span class="s1"> </span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">daYun</span><span class="s8">.</span><span class="s1">includes</span><span class="s8">(</span><span class="s13">"木"</span><span class="s8">))</span><span class="s1"> summary </span><span class="s8">=</span><span class="s1"> </span><span class="s13">"全年風氣大行，氣候多變且不穩定。"</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">else</span><span class="s1"> </span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">daYun</span><span class="s8">.</span><span class="s1">includes</span><span class="s8">(</span><span class="s13">"金"</span><span class="s8">))</span><span class="s1"> summary </span><span class="s8">=</span><span class="s1"> </span><span class="s13">"全年燥氣偏盛，氣候趨於乾燥清冷。"</span><span class="s8">;</span></p>
-<p class="p5"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s7">else</span><span class="s5"> summary </span><span class="s8">=</span><span class="s5"> </span><span class="s1">"全年濕氣較重，氣候沈重潮濕，雨水可能較多。"</span><span class="s8">;</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>features</span><span class="s8">.</span><span class="s1">push</span><span class="s8">(</span><span class="s13">`○ 總體而言，</span><span class="s8">${</span><span class="s1">summary</span><span class="s8">}</span><span class="s13">`</span><span class="s8">);</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">return</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>wuYun</span><span class="s8">:</span><span class="s1"> wuYun</span><span class="s8">,</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>features</span><span class="s8">:</span><span class="s1"> features</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">};</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s1"> yearInput </span><span class="s8">=</span><span class="s1"> document</span><span class="s8">.</span><span class="s1">getElementById</span><span class="s8">(</span><span class="s13">'yearInput'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s1"> wuYunResult </span><span class="s8">=</span><span class="s1"> document</span><span class="s8">.</span><span class="s1">getElementById</span><span class="s8">(</span><span class="s13">'wuYunResult'</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">const</span><span class="s1"> featureResult </span><span class="s8">=</span><span class="s1"> document</span><span class="s8">.</span><span class="s1">getElementById</span><span class="s8">(</span><span class="s13">'featureResult'</span><span class="s8">);</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s7">function</span><span class="s1"> updateDisplay</span><span class="s8">()</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> year </span><span class="s8">=</span><span class="s1"> parseInt</span><span class="s8">(</span><span class="s1">yearInput</span><span class="s8">.</span><span class="s1">value</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">if</span><span class="s1"> </span><span class="s8">(</span><span class="s1">year </span><span class="s8">&lt;</span><span class="s1"> </span><span class="s11">1927</span><span class="s1"> </span><span class="s8">||</span><span class="s1"> year </span><span class="s8">&gt;</span><span class="s1"> </span><span class="s11">2026</span><span class="s1"> </span><span class="s8">||</span><span class="s1"> isNaN</span><span class="s8">(</span><span class="s1">year</span><span class="s8">))</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>wuYunResult</span><span class="s8">.</span><span class="s1">innerHTML </span><span class="s8">=</span><span class="s1"> </span><span class="s13">"超出查詢範圍"</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span>featureResult</span><span class="s8">.</span><span class="s1">innerHTML </span><span class="s8">=</span><span class="s1"> </span><span class="s13">"請輸入 1927 至 2026 之間的年份。"</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s7">return</span><span class="s8">;</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> data </span><span class="s8">=</span><span class="s1"> getFortuneData</span><span class="s8">(</span><span class="s1">year</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>wuYunResult</span><span class="s8">.</span><span class="s1">innerHTML </span><span class="s8">=</span><span class="s1"> data</span><span class="s8">.</span><span class="s1">wuYun</span><span class="s8">;</span></p>
-<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>featureResult</span><span class="s8">.</span><span class="s1">innerHTML </span><span class="s8">=</span><span class="s1"> data</span><span class="s8">.</span><span class="s1">features</span><span class="s8">.</span><span class="s1">map</span><span class="s8">(</span><span class="s1">f </span><span class="s8">=&gt;</span><span class="s1"> </span><span class="s13">`&lt;p&gt;</span><span class="s8">${</span><span class="s1">f</span><span class="s8">}</span><span class="s13">&lt;/p&gt;`</span><span class="s8">).</span><span class="s1">join</span><span class="s8">(</span><span class="s13">''</span><span class="s8">);</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">}</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>yearInput</span><span class="s8">.</span><span class="s1">addEventListener</span><span class="s8">(</span><span class="s13">'input'</span><span class="s8">,</span><span class="s1"> updateDisplay</span><span class="s8">);</span></p>
-<p class="p6"><span class="s9"></span><br></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s12">// 初始執行</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span>window</span><span class="s8">.</span><span class="s1">onload </span><span class="s8">=</span><span class="s1"> </span><span class="s8">()</span><span class="s1"> </span><span class="s8">=&gt;</span><span class="s1"> </span><span class="s8">{</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s7">const</span><span class="s1"> currentYear </span><span class="s8">=</span><span class="s1"> </span><span class="s7">new</span><span class="s1"> </span><span class="s14">Date</span><span class="s8">().</span><span class="s1">getFullYear</span><span class="s8">();</span></p>
-<p class="p7"><span class="s5"><span class="Apple-converted-space">            </span></span><span class="s1">// 系統指令要求默認顯示即時年份 2026</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>yearInput</span><span class="s8">.</span><span class="s1">value </span><span class="s8">=</span><span class="s1"> </span><span class="s11">2026</span><span class="s8">;</span><span class="s1"><span class="Apple-converted-space"> </span></span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">            </span>updateDisplay</span><span class="s8">();</span></p>
-<p class="p4"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s8">};</span></p>
-<p class="p1"><span class="s5"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
-<p class="p1"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <div class="max-w-4xl w-full bg-white p-8 rounded-xl shadow-lg border border-stone-200">
+        <h1 class="text-3xl font-bold text-center mb-8 text-stone-800">五運六氣查詢系統</h1>
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <!-- 年份格 (輸入) -->
+            <div class="md:col-span-3 flex flex-col">
+                <span class="label-tag">查詢年份</span>
+                <div class="flex-grow flex items-center justify-center bg-stone-50 border-2 border-stone-200 rounded-lg p-4">
+                    <input type="number" id="yearInput" 
+                           class="text-4xl font-bold text-center bg-transparent w-full text-stone-700"
+                           min="1927" max="2026" value="2026">
+                </div>
+                <p class="text-xs text-center mt-2 text-stone-500">請輸入 1927 - 2026</p>
+            </div>
+
+            <!-- 五運六氣格 (顯示) -->
+            <div class="md:col-span-4 flex flex-col">
+                <span class="label-tag">五運六氣</span>
+                <div id="wuYunBox" class="content-box flex-grow bg-stone-50 border-2 border-stone-200 rounded-lg p-6 flex items-center justify-center text-center">
+                    <p class="text-xl font-bold leading-relaxed text-stone-700" id="wuYunResult"></p>
+                </div>
+            </div>
+
+            <!-- 運氣特點格 (顯示) -->
+            <div class="md:col-span-5 flex flex-col">
+                <span class="label-tag">運氣特點</span>
+                <div id="featureBox" class="content-box flex-grow bg-stone-50 border-2 border-stone-200 rounded-lg p-6 overflow-y-auto">
+                    <div id="featureResult" class="text-stone-600 leading-relaxed space-y-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center text-stone-400 text-sm italic">
+            資料來源：1927-2026 五運六氣完整詳細總結表
+        </div>
+    </div>
+
+    <script>
+        // 定義 60 年循環的基礎數據 (根據天干地支規律推算)
+        // 1924 為 甲子 (0)
+        // 1927 為 丁卯 (3)
+        
+        const stems = ["甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"];
+        const branches = ["子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"];
+        
+        // 司天對應表 (地支)
+        const siTianMap = {
+            "子": "少陰君火", "午": "少陰君火",
+            "丑": "太陰濕土", "未": "太陰濕土",
+            "寅": "少陽相火", "申": "少陽相火",
+            "卯": "陽明燥金", "酉": "陽明燥金",
+            "辰": "太陽寒水", "戌": "太陽寒水",
+            "巳": "厥陰風木", "亥": "厥陰風木"
+        };
+
+        // 在泉對應表 (地支)
+        const zaiQuanMap = {
+            "子": "陽明燥金", "午": "陽明燥金",
+            "丑": "太陽寒水", "未": "太陽寒水",
+            "寅": "厥陰風木", "申": "厥陰風木",
+            "卯": "少陰君火", "酉": "少陰君火",
+            "辰": "太陰濕土", "戌": "太陰濕土",
+            "巳": "少陽相火", "亥": "少陽相火"
+        };
+
+        // 大運對應表 (天干)
+        const daYunMap = {
+            "甲": "土運太過", "己": "土運不及",
+            "乙": "金運不及", "庚": "金運太過",
+            "丙": "水運太過", "辛": "水運不及",
+            "丁": "木運不及", "壬": "木運太過",
+            "戊": "火運太過", "癸": "火運不及"
+        };
+
+        function getFortuneData(year) {
+            const baseYear = 1924; // 甲子
+            const offset = (year - baseYear) % 60;
+            const stemIdx = (year - 4) % 10;
+            const branchIdx = (year - 4) % 12;
+            
+            const stem = stems[stemIdx];
+            const branch = branches[branchIdx];
+            const stemBranch = stem + branch;
+            
+            const siTian = siTianMap[branch];
+            const zaiQuan = zaiQuanMap[branch];
+            const daYun = daYunMap[stem];
+
+            // 構建五運六氣描述
+            const wuYun = `${stemBranch}年<br>${stem}為${daYun.slice(0,2)}（${daYun}）；<br>${siTian}司天；<br>${zaiQuan}在泉`;
+
+            // 構建詳細特點 (模擬 V4 生成的邏輯)
+            let features = [];
+            features.push(`○ 該年為「${siTian}」司天，上半年氣候以${siTian.slice(2)}主事，氣候偏${siTian.slice(2,3) === '寒' ? '冷' : siTian.slice(2,3) === '燥' ? '乾' : '熱'}。`);
+            
+            if (daYun.includes("太過")) {
+                features[0] += ` 受「${daYun.slice(0,2)}」之影響，氣候變化較為劇烈。`;
+            } else {
+                features[0] += ` 由於「${daYun.slice(0,2)}」不足，易受司天之氣克制。`;
+            }
+
+            features.push(`○ 下半年由「${zaiQuan}」在泉主導，${zaiQuan.slice(2)}之氣流行。`);
+            
+            let summary = "";
+            if (daYun.includes("水")) summary = "全年水氣偏盛，寒氣較重，需注意冷熱交替。";
+            else if (daYun.includes("火")) summary = "全年火氣偏旺，炎熱明顯，燥氣可能隨之。";
+            else if (daYun.includes("木")) summary = "全年風氣大行，氣候多變且不穩定。";
+            else if (daYun.includes("金")) summary = "全年燥氣偏盛，氣候趨於乾燥清冷。";
+            else summary = "全年濕氣較重，氣候沈重潮濕，雨水可能較多。";
+
+            features.push(`○ 總體而言，${summary}`);
+
+            return {
+                wuYun: wuYun,
+                features: features
+            };
+        }
+
+        const yearInput = document.getElementById('yearInput');
+        const wuYunResult = document.getElementById('wuYunResult');
+        const featureResult = document.getElementById('featureResult');
+
+        function updateDisplay() {
+            const year = parseInt(yearInput.value);
+            if (year < 1927 || year > 2026 || isNaN(year)) {
+                wuYunResult.innerHTML = "超出查詢範圍";
+                featureResult.innerHTML = "請輸入 1927 至 2026 之間的年份。";
+                return;
+            }
+
+            const data = getFortuneData(year);
+            wuYunResult.innerHTML = data.wuYun;
+            
+            featureResult.innerHTML = data.features.map(f => `<p>${f}</p>`).join('');
+        }
+
+        yearInput.addEventListener('input', updateDisplay);
+
+        // 初始執行
+        window.onload = () => {
+            const currentYear = new Date().getFullYear();
+            // 系統指令要求默認顯示即時年份 2026
+            yearInput.value = 2026; 
+            updateDisplay();
+        };
+    </script>
 </body>
 </html>
